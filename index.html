@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" class="css">
+    <title>Mundo Libro</title>
+    <link rel="icon" href="./assets/img/icons/libro-mundo.png">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/icons/logo.png" alt="logo" class="img-header">
+        <nav class="navbar">
+            <label class="menu-label">
+                <img src="./assets/img/icons/libro.png" alt="menu" class="menu-icon" width="50px">
+            </label>
+           
+            <ul class="navbar-list">
+                <li><a href="header">Inicio</a></li>
+                <li><a href="#portada">Novedades</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+
+            <label class="cart-label">
+                <img src="./assets/img/icons/carrito.png" alt="carrito de compras" class="cart-icon" width="50px">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                    <div class="cart-bubble">0</div>
+                  </i>
+            </label>
+
+            <!-- <input type="checkbox" id="cart-toggle"> -->
+            <div class="cart">
+
+                <h2>Tus productos</h2>
+
+                <div class="cart-container">
+
+                </div>
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                  <p>Total:</p>
+
+                  <span class="total">$10500</span>
+                </div>
+
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+
+            </div>
+
+            <div class="overlay"></div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="portada">
+            <img src="assets/img/30%-libro.png" alt="">
+            <img src="assets/img/ingreso-libro.png" alt="">
+        </section>
+
+        <section id="about">
+            <h2>Quiénes somos</h2>
+             <div class="text">
+               <p>Mundo Libros es una sociedad con la inicitiva de promover la lectura. Amamos los libros y 
+                quisieramos un mundo lleno de ellos!</p>
+               <p>Nos encontramos en la provincia de Santa Fe, Argentina. A través de nuestra página web podes
+                adquirir todos los libros disponibles o podes acercarte a nuestras sucursales.</p>
+             </div>
+        </section>
+
+        <section id="sucursales">
+          <h2>¡Acercate a nuestras sucursales!</h2>
+           <div class="info-cards-container">
+               <div class="info-card">
+                   <h3>ROSARIO</h3>
+                   <img src="./assets/img/sucursales/sucursal-1.jpg" alt="">
+                   <p>Ubicada en calle Mitre 820</p>
+               </div>
+               <div class="info-card">
+                   <h3>GRANADERO BAIGORRIA</h3>
+                   <img src="./assets/img/sucursales/sucursal-2.jpg" alt="">
+                   <p>Ubicada en Avenida San Martin 1350</p>
+               </div>
+               <div class="info-card">
+                   <h3>SAN LORENZO</h3>
+                   <img src="./assets/img/sucursales/sucursal-3.jpg" alt="">
+                   <p>Ubicada en calle Yrigoyen 470</p>
+               </div>
+           </div>
+        </section>
+    
+        <section id="products">
+          <h2>LIBROS</h2>
+             <div class="categories">
+               <button class="category active">🎨Todas</button>
+               <button class="category" data-category="autoayuda">Autoayuda</button>
+               <button class="category" data-category="ficción">Ficción</button>
+               <button class="category" data-category="fantasía">Fantasía</button>
+               <button class="category" data-category="política">Política</button>
+               <button class="category" data-category="novelas">Novelas</button>
+               <button class="category" data-category="espiritualidad">Espiritualidad</button>
+               <button class="category" data-category="infantiles">Infantiles</button>
+             </div>
+
+             <div class="products-container">
+             
+             </div>
+        
+             <button class="btn-load">Ver Más</button>
+
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+           <h2>CONTACTATE CON NOSOTROS</h2>
+           <ul class="footer-links">
+              <li><a href="#">Whatsapp</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+           </ul>
+        </section>
+        
+    </footer>
+    
+    <div class="add-modal"></div>
+    
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+    
+ </body>
+</html><a href="https://www.flaticon.es/iconos-gratis" title="carrito de compras iconos">Carrito de compras iconos creados por Smashicons - Flaticon</a>
