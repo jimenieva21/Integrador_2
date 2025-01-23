@@ -317,23 +317,6 @@ header {
         margin-left: 0;
     }
 }
-@keyframes automatizacion {
-    0% {
-        margin-left: 0;
-    }
-    25% {
-        margin-left: 0;
-    }
-    50% {
-        margin-left: -50%;
-    }
-    95% {
-        margin-left: -100%;
-    }
-    100% {
-        margin-left: 0;
-    }
-}
 
 #about {
     justify-content: center;
