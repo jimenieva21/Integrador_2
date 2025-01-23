@@ -1,9 +1,18 @@
+:root {
+  --color-light: #69eeee;
+  --text-black: #000;
+  --color-pink: #e04c85;
+  --text-white: #fff;
+  --color-purple: #9b51fc;
+  --color-blue: #0832ee;
+}
+
+
 @media (max-width: 992px) {
 
     .img-header {
         height: 60px;
         width: 120px;
-        
     }
     
     .navbar{
@@ -11,25 +20,37 @@
       }
 
     .navbar-list {
-        position: absolute;
+        position: fixed;
         top: 65px;
-        left: 5%;
-        right: 5%;
         width: 90%;
+        left: 5%;
         flex-direction: column;
-        background-color: var(--nav-bg);
-        border: 2px solid var(--electric);
-        border-top: 0px;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom, var(--text-white), var(--color-purple));
+        border: 2px solid var(--color-purple);
+        border-top: 0;
         border-radius: 0px 0px 15px 15px;
-        align-items: flex-start;
-        padding: 45px 30px;
         gap: 25px;
-        z-index: 2;
+        z-index: 10;
         display: none;
+        padding: 10px;
       }
+
+    .navbar-list li:first-child > a {
+        color: var(--color-purple);
+      }
+
+    .show-overlay {
+      z-index: 1;
+    }
 
     .navbar-list a {
         font-size: 18px;
+      }
+
+    .menu-icon {
+        display: block;
       }
 
     .menu-label {
@@ -38,15 +59,15 @@
         cursor: pointer;
       }
 
-    .menu-label img {
-        height: 20px;
-        width: 25px;
+    .open-menu {
+        display: flex;
+        z-index: 2;
       }
 
     .cart-icon {
         height: 40px;
         width: 40px;
-    }  
+      }  
 
     .cart-bubble {
         height: 12px;
@@ -55,15 +76,80 @@
         right: -2px;
     }
     
-    /* .open-menu {
-        display: flex;
-      }*/
-
     #about h2 {
         font-size: 24px;
     }
-
+  
     .text {
         font-size: 20px;
     }
+
+    .info-card {
+      height: 350px;
+      width: 250px;
+    }
+
+    .info-card img {
+      height: 180px;
+      width: 180px;
+    }
+    
+    .info-card h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    .info-card p {
+      font-size: 20px;
+      text-align: center;
+    }
 } 
+
+@media (max-width: 576px) {
+
+  .cart {
+    left: 0;
+    width: 100%;
+    border: none;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  #sucursales h2 {
+    font-size: 30px;
+  }
+
+  .info-cards-container {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .categories {
+    padding-left: 15%;
+    padding-right: 10%;
+  }
+
+  .category {
+    justify-content: center;
+    padding: 5px, 10px;
+  }
+
+  .products-container {
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .product {
+    padding: 10px;
+    gap: 5px;
+  }
+  
+  .product img {
+    width: 80px;
+    height: 80px;
+  }
+}

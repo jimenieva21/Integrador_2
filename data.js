@@ -4,7 +4,7 @@ const productsData = [
       name: "Vivir adentro",
       bid: 8500,
       writer: "Arnau Vendrell",
-      category: "Autoayuda",
+      category: "autoayuda",
       cardImg: "./assets/img/products/vivir-adentro.jpg" ,
     },
     {
@@ -12,7 +12,7 @@ const productsData = [
       name: "Templo del cielo",
       bid: 9000,
       writer: "Enrique Joven",
-      category: "Ficción",
+      category: "ficción",
       cardImg: "./assets/img/products/el-templo-del-cielo.jpg",
     },
     {
@@ -20,7 +20,7 @@ const productsData = [
       name: "Los jardines de la luna",
       bid: 9500,
       writer: "Steven Erikson",
-      category: "Fantasía",
+      category: "fantasía",
       cardImg: "./assets/img/products/los-jardines-de-la-luna.jpg",
     },
     {
@@ -28,7 +28,7 @@ const productsData = [
       name: "Sinceramente",
       bid: 7500,
       writer: "Cristina Fernandez Kirchner",
-      category: "Política",
+      category: "política",
       cardImg: "./assets/img/products/sinceramente.jpg",
     },
     {
@@ -36,7 +36,7 @@ const productsData = [
       name: "Antes de Ti",
       bid: 10000,
       writer: "Jojo Moyes",
-      category: "Novelas",
+      category: "novelas",
       cardImg: "./assets/img/products/antes-de-ti.jpg",
     },
     {
@@ -44,7 +44,7 @@ const productsData = [
       name: "Doce hombres",
       bid: 8500,
       writer: "Jhon MacArthur",
-      category: "Espiritualidad",
+      category: "espiritualidad",
       cardImg: "./assets/img/products/doce-hombres-comunes-y-corrientes.jpg",
     },
     {
@@ -52,7 +52,7 @@ const productsData = [
       name: "El principito",
       bid: 6000,
       writer: "Antoine de Saint-Exupéry",
-      category: "Infantiles",
+      category: "infantiles",
       cardImg: "./assets/img/products/el-principito.jpg",
     },
     {
@@ -60,7 +60,7 @@ const productsData = [
       name: "El poder del ahora",
       bid: 6500,
       writer: "Eckhart Tolle",
-      category: "Autoayuda",
+      category: "autoayuda",
       cardImg: "./assets/img/products/el-poder-del-ahora.jpg",
     },
     {
@@ -68,7 +68,7 @@ const productsData = [
       name: "Viajeros de la noche",
       bid: 7000,
       writer: "George R. R. Martin",
-      category: "Ficción",
+      category: "ficción",
       cardImg: "./assets/img/products/viajeros-de-la-noche.jpg",
     },
     {
@@ -76,7 +76,7 @@ const productsData = [
       name: "La senda oscura",
       bid: 9500,
       writer: "Ana Peris de Elena",
-      category: "Fantasía",
+      category: "fantasía",
       cardImg: "./assets/img/products/la-senda-oscura.jpg",
     },
     {
@@ -84,7 +84,7 @@ const productsData = [
       name: "El fin de la inflación",
       bid: 7500,
       writer: "Javier Milei",
-      category: "Política",
+      category: "política",
       cardImg: "./assets/img/products/el-fin-de-la-inflacion.jpg",
     },
     {
@@ -92,7 +92,7 @@ const productsData = [
       name: "After",
       bid: 9000,
       writer: "Anna Todd",
-      category: "Novelas",
+      category: "novelas",
       cardImg: "./assets/img/products/after.jpg",
     },
     {
@@ -100,7 +100,7 @@ const productsData = [
       name: "Caminar con Dios",
       bid: 7500,
       writer: "Pedro Fuentes",
-      category: "Espiritualidad",
+      category: "espiritualidad",
       cardImg: "./assets/img/products/caminar-con-dios.png",
     },
     {
@@ -108,7 +108,7 @@ const productsData = [
       name: "Fabulas",
       bid: 6000,
       writer: "Rosa Navarro Durán",
-      category: "Infantiles",
+      category: "infantiles",
       cardImg: "./assets/img/products/fabulas.jpg",
     },
     {
@@ -116,7 +116,7 @@ const productsData = [
       name: "Creer en ti",
       bid: 9500,
       writer: "Daniel J. Martin",
-      category: "Autoayuda",
+      category: "autoayuda",
       cardImg: "./assets/img/products/creer-en-ti.jpg",
     },
     {
@@ -124,7 +124,7 @@ const productsData = [
       name: "Prueba de fuego",
       bid: 10500,
       writer: "James Dashner",
-      category: "Ficción",
+      category: "ficción",
       cardImg: "./assets/img/products/prueba-de-fuego.jpg",
     },
     {
@@ -132,7 +132,7 @@ const productsData = [
       name: "Las crónicas de Narnia",
       bid: 9000,
       writer: "C. S. Lewis",
-      category: "Fantasía",
+      category: "fantasía",
       cardImg: "./assets/img/products/las-cronicas-de-narnia.jpg",
     },
     {
@@ -140,7 +140,7 @@ const productsData = [
       name: "Primer Tiempo",
       bid: 7500,
       writer: "Mauricio Macri",
-      category: "Política",
+      category: "política",
       cardImg: "./assets/img/products/primer-tiempo.jpg",
     },
    {
@@ -148,7 +148,7 @@ const productsData = [
       name: "Para mi otro amor",
       bid: 6500,
       writer: "Angie Figueroa",
-      category: "Novelas",
+      category: "novelas",
       cardImg: "./assets/img/products/para-mi-otro-amor.jpg",
     },
     {
@@ -156,7 +156,7 @@ const productsData = [
       name: "Las Arenas del alma",
       bid: 9000,
       writer: "Dante Gebel",
-      category: "Espiritualidad",
+      category: "espiritualidad",
       cardImg: "./assets/img/products/las-arenas-del-alma.jpg",
     },
     {
@@ -164,7 +164,7 @@ const productsData = [
       name: "Caperucita Roja",
       bid: 6000,
       writer: "Charles Perrault",
-      category: "Infantiles",
+      category: "infantiles",
       cardImg: "./assets/img/products/caperucita-roja.jpg",
     },
     {
@@ -172,7 +172,7 @@ const productsData = [
       name: "El fin de la ansiedad",
       bid: 7500,
       writer: "Gio Zararri",
-      category: "Autoayuda",
+      category: "autoayuda",
       cardImg: "./assets/img/products/el-fin-de-la-ansiedad.jpg",
     },
     {
@@ -180,7 +180,7 @@ const productsData = [
       name: "Sueños de robot",
       bid: 8000,
       writer: "Isaac Asimov",
-      category: "Ficción",
+      category: "ficción",
       cardImg: "./assets/img/products/sueños-de-robot.jpg",
     },
     {
@@ -188,7 +188,7 @@ const productsData = [
       name: "Todas las hadas",
       bid: 9000,
       writer: "Laura Gallego",
-      category: "Fantasía",
+      category: "fantasía",
       cardImg: "./assets/img/products/todas-las-hadas-del-reino.jpg",
     },
     {
@@ -196,7 +196,7 @@ const productsData = [
       name: "Los partidos políticos",
       bid: 7500,
       writer: "Maurice Duverger",
-      category: "Política",
+      category: "política",
       cardImg: "./assets/img/products/los-partidos-politicos.jpg",
     },
     {
@@ -204,7 +204,7 @@ const productsData = [
       name: "A dos metros de ti",
       bid: 8500,
       writer: "Rachael Lippincott",
-      category: "Novelas",
+      category: "novelas",
       cardImg: "./assets/img/products/a-dos-metros-de-ti.jpg",
     },
     {
@@ -212,7 +212,7 @@ const productsData = [
       name: "Los peligros del deleite",
       bid: 8000,
       writer: "John Piper",
-      category: "Espiritualidad",
+      category: "espiritualidad",
       cardImg: "./assets/img/products/los-peligros-del-deleite.jpg",
     },
     {
@@ -220,9 +220,23 @@ const productsData = [
       name: "Rapunzel con piojos",
       bid: 6500,
       writer: "El Hematocrítico",
-      category: "Infantiles",
+      category: "infantiles",
       cardImg: "./assets/img/products/rapunzel-con-piojos.jpg",
     },
-    
-  
   ];
+
+  const divideProductsInParts = (size) => {
+    let productsList = [];
+    for (let i = 0; i < productsData.length; i += size) {
+      productsList.push(productsData.slice(i, i + size));
+    }
+    return productsList
+  }
+
+  const appState = {
+    products: divideProductsInParts(6),
+    productLimit: divideProductsInParts(6).length,
+    currentProductsIndex: 0,
+    activeFilter: null,
+  }
+
