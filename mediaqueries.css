@@ -170,6 +170,13 @@
     padding: 10px;
     gap: 5px;
   }
+
+  .product-info h3 {
+    font-size: 15px;
+  }
+  .product-writer {
+    font-size: 15px;
+  }
   
   .product img {
     width: 80px;
@@ -177,9 +184,18 @@
   }
 
   .btn-add {
-    width: 60px;
+    width: 50px;
     height: 30px;
     font-size: 10px;
+  }
+
+  .product-info {
+    gap: 5px;
+    width: 150px;
+  }
+
+  .product-end span {
+    font-size: 13px;
   }
   
 }
