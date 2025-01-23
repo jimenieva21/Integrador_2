@@ -415,6 +415,8 @@ header {
 .categories {
   justify-content: space-between;
   flex-direction: column;
+  gap: 5px;
+  margin: 5px;
 }
 
 .category {
