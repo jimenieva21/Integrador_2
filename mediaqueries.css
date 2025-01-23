@@ -134,12 +134,12 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-bottom: 5px; 
   }
 
   .info-card img {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
   }
   
   .info-card h3 {
