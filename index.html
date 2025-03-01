@@ -117,6 +117,23 @@
     <footer>
         <section id="contact">
            <h2>CONTACTATE CON NOSOTROS</h2>
+
+           <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+    
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+    
+            <button type="submit" class="btn-form">Enviar</button>
+        </form>
+
            <ul class="footer-links">
               <li><a href="#"><img src="./assets/img/icons/whatsapp.png" alt="Whatsapp" width="40px"></a></li>
               <li><a href="#"><img src="./assets/img/icons/facebook.png" alt="Facebook" width="40px"></a></li>
@@ -136,6 +153,7 @@
     
     <script src="data.js"></script>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
  </body>
  

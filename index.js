@@ -13,6 +13,8 @@ const cartBubble =document.querySelector(".cart-bubble");
 const buyBtn = document.querySelector(".btn-buy");
 const deleteBtn = document.querySelector(".btn-delete");
 const successModal = document.querySelector(".add-modal");
+const form = document.getElementById("#contactForm");
+
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -270,13 +272,22 @@ const handleQuantity = (e) => {
 const handleMinusBtnEvent = (id) => {
    const existingCartProduct = cart.find((item)=>item.id === id)
    if (existingCartProduct.quantity === 1) {
-      if(window.confirm("¿Desea eliminar el producto del carrito?")) 
-         {
-         removeProductFromCart(existingCartProduct)
-      }
+      Swal.fire({
+         title:"¿Desea eliminar el producto del carrito?",
+         text: "Esta acción no se puede deshacer.",
+         icon: "warning",
+         showCancelButton: true,
+         confirmButtonText: "Sí, eliminar",
+         cancelButtonText: "Cancelar"
+      }).then((result) => {
+         if (result.isConfirmed) {
+            removeProductFromCart(existingCartProduct);
+            Swal.fire("¡Eliminado!", "El producto ha sido eliminado del carrito.");
+         }
+      });
       return;
    }
-   substractProductUnit(existingCartProduct)
+   substractProductUnit(existingCartProduct);
 }
 
 const substractProductUnit = (existingProduct) => {
@@ -303,21 +314,78 @@ const resetCartItems = () => {
 
 const completeCartAction = (confirmMsg, successMsg) => {
    if(!cart.length) return;
-   if(window.confirm(confirmMsg)) {
-      resetCartItems();
-      alert(successMsg)
-   }
+   Swal.fire({
+      title: confirmMsg,
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Sí, completar compra",
+      cancelButtonText: "Cancelar"
+   }).then((result) => {
+      if (result.isConfirmed) {
+         resetCartItems();
+         Swal.fire("¡Compra completada!", successMsg);
+      }
+   });
 }
 
 const completeBuy = () => {
-   completeCartAction("¿Desea completar su compra?",
-      "¡Gracias por su compra!")
+   completeCartAction("¿Desea completar su compra?", "¡Gracias por su compra!")
 }
 
 const deleteCart = () => {
-   completeCartAction("¿Desea vaciar el carrito?",
-      "No hay productos en el carrito.")
+   Swal.fire({
+      title: "¿Desea vaciar el carrito?",
+      text: "Esta acción eliminará todos los productos.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Sí, vaciar",
+      cancelButtonText: "Cancelar"
+   }).then((result) => {
+      if (result.isConfirmed) {
+         resetCartItems();
+         Swal.fire("¡Carrito vacío!", "No hay productos en el carrito.");
+      }
+   });
 }
+
+const validateForm = (name, email, message, callback) => {
+   if (!name || !email || !message) {
+       return callback("Por favor, complete todos los campos.");
+   }
+
+   if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+       return callback("Por favor, ingrese un correo electrónico válido.");
+   }
+
+   callback(null);
+}
+
+const handleFormSubmit = (event) => {
+   event.preventDefault();
+
+   const name = document.getElementById("name").value;
+   const email = document.getElementById("email").value;
+   const message = document.getElementById("message").value;
+
+   validateForm(name, email, message, (error) => {
+      if (error) {
+          Swal.fire({
+             title: "¡Error!",
+             text: error,
+             icon: "error",
+             confirmButtonText: "Intentar de nuevo"
+          });
+      } else {
+        Swal.fire({
+           title: "¡Formulario enviado!",
+           text: "Gracias por ponerte en contacto con nosotros. Nos comunicaremos pronto.",
+           confirmButtonText: "¡Genial!"
+        });
+        document.getElementById("contactForm").reset();
+      }
+  });
+}
+const formElement = document.getElementById("contactForm");
 
 const init = () => {
    renderProducts(appState.products[0]);
@@ -334,6 +402,7 @@ const init = () => {
    productsCart.addEventListener("click", handleQuantity);
    buyBtn.addEventListener("click", completeBuy);
    deleteBtn.addEventListener("click", deleteCart);
+   formElement.addEventListener("submit", handleFormSubmit);
    disableBtn(buyBtn);
    disableBtn(deleteBtn);
    renderCartBubble();
